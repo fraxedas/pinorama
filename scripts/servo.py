@@ -13,4 +13,4 @@ try:
 		
 		time.sleep(2)
 except KeyboardInterrupt:
-	GPIO.Cleanup()
+	GPIO.cleanup()
