@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #Requires mencoder
-#sudo apt-get install mencoder
 
 #Timelapse parameters
 FPS=30
