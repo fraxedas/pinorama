@@ -10,11 +10,11 @@ p.start(7.5)
 
 try:
 	while True:
-		p.ChangeDuttyCycle(7.5)
+		p.ChangeDutyCycle(7.5)
 		time.sleep(1)
-		p.ChangeDuttyCycle(12.5)
+		p.ChangeDutyCycle(12.5)
 		time.sleep(1)
-		p.ChangeDuttyCycle(2.5)
+		p.ChangeDutyCycle(2.5)
 		time.sleep(1)
 		
 except KeyboardInterrupt:
