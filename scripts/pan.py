@@ -5,7 +5,7 @@ import sys
 GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(7, GPIO.OUT)
-cycle = sys.argv[1] 
+cycle = float(sys.argv[1]) 
 
 pan = GPIO.PWM(7,50)
 pan.start(cycle)
