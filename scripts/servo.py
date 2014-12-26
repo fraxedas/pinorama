@@ -9,21 +9,24 @@ GPIO.setup(18, GPIO.OUT)
 pan = GPIO.PWM(7,50)
 pan.start(7.5)
 
-tilt = GPIO.PWM(7,50)
+tilt = GPIO.PWM(18,50)
 tilt.start(7.5)
 
 try:
     while True:
         #Neutral
         pan.ChangeDutyCycle(7.5)
+        time.sleep(1)
         tilt.ChangeDutyCycle(7.5)
         time.sleep(1)
         #180
         pan.ChangeDutyCycle(12.5)
+        time.sleep(1)
         tilt.ChangeDutyCycle(12.5)
         time.sleep(1)
         #0
         pan.ChangeDutyCycle(2.5)
+        time.sleep(1)
         tilt.ChangeDutyCycle(2.5)
         time.sleep(1)
 
