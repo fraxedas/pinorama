@@ -1,7 +1,17 @@
 #!/bin/bash
 
-#Timelapse parameters
+Photo=$(date +%y%m%d%H%M%S).jpg
 Duration=3600000
 Interval=1000
 
-raspistill -t $Duration -tl $Interval -o photo%04d.jpg
+if [ $# -ge 1 ]; then
+	Photo=$1
+fi
+if [ $# -ge 2 ]; then
+	Duration=$2
+fi
+if [ $# -eq 3 ]; then
+	Interval=$3
+fi
+
+raspistill -t $Duration -tl $Interval -o $Photo%04d.jpg
