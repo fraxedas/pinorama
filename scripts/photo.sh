@@ -1,5 +1,7 @@
 #!/bin/bash
 
-DATE=$(date +"%Y-%m-%d_%H%M%S")
+. param.sh
 
-raspistill -o $DATE.jpg
+Echo $param
+
+raspistill -o $param
