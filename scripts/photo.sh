@@ -1,7 +1,10 @@
 #!/bin/bash
 
-. param.sh
+photo=$(date +%y%m%d%H%M%S).jpg
 
-Echo $param
+if [ $# -eq 1 ]; then
+	photo=$1
+fi
 
-raspistill -o $param
+raspistill -o $photo
+echo $photo

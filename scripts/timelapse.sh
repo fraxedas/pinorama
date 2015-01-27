@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Photo=$(date +%y%m%d%H%M%S).jpg
+Photo=$(date +%y%m%d%H%M%S)
 Duration=3600000
 Interval=1000
 
@@ -15,3 +15,4 @@ if [ $# -eq 3 ]; then
 fi
 
 raspistill -t $Duration -tl $Interval -o $Photo%04d.jpg
+./stich.sh
