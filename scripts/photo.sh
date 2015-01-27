@@ -7,4 +7,4 @@ if [ $# -eq 1 ]; then
 fi
 
 raspistill -o $photo
-echo $photo
+ls $photo
