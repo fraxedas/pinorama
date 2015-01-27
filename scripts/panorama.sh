@@ -15,5 +15,6 @@ if [ $# -eq 3 ]; then
 fi
 
 python panorama.py $Photo $Pan $Tilt
+ls $Photo*
         
 

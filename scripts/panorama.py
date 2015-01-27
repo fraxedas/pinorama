@@ -1,6 +1,7 @@
 import sys
 import functions
 import servo
+import console
 
 #Servo pins in use
 panServo = 7
@@ -23,6 +24,8 @@ for p in functions.step_range(minPan, maxPan, panStep):
     servo.move(panServo,p)
     for t in step_range(minTilt, maxTilt, tiltStep):
         servo .move(tiltServo,t)
+        console.run("./photo " + functions.name(name,p,t))
+
 
     
 
