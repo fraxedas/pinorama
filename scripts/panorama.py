@@ -24,7 +24,7 @@ for p in functions.step_range(minPan, maxPan, panStep):
     servo.move(panServo,p)
     for t in functions.step_range(minTilt, maxTilt, tiltStep):
         servo.move(tiltServo,t)
-        console.run("./photo " + functions.name(name,p,t))
+        console.run("./photo.sh " + functions.name(name,p,t))
 
 
     
