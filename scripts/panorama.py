@@ -14,8 +14,8 @@ tilts = int(sys.argv[3])
 #Servo configs
 minPan = 2.5
 maxPan = 12.5
-minTilt = 2.5
-maxTilt = 7
+minTilt = 5
+maxTilt = 12.5
 
 panStep = round((maxPan-minPan)/pans,1)
 tiltStep = round((maxTilt-minTilt)/pans, 1)
