@@ -7,7 +7,7 @@ import console
 panServo = 7
 tiltServo = 18
 
-name = int(sys.argv[1]) 
+name = sys.argv[1] 
 pans = int(sys.argv[2]) 
 tilts = int(sys.argv[3]) 
 
@@ -24,7 +24,7 @@ for p in functions.step_range(minPan, maxPan, panStep):
     servo.move(panServo,p)
     for t in functions.step_range(minTilt, maxTilt, tiltStep):
         servo.move(tiltServo,t)
-        console.run("./photo.sh " + functions.name(name,p,t))
+        console.run(["./photo.sh", functions.name(name,p,t)])
 
 
     
