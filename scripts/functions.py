@@ -4,4 +4,4 @@ def step_range(start, end, step):
         start += step
 
 def name(prefix, pan, tilt):
-    return prefix  + "-" + str(pan) + "-" + str(tilt) + ".jpg"
+    return str(prefix)  + "-" + str(pan) + "-" + str(tilt) + ".jpg"
