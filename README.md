@@ -3,6 +3,11 @@ pinorama
 
 Create photos with scala and the raspberry pi
 
+To get started ssh into the pi and execute the following:
+> git clone https://github.com/fraxedas/pinorama.git  
+> cd pinorama/scripts  
+> sudo ./panorama.sh  
+
 
 Camera specs
 ============
