@@ -1,6 +1,8 @@
 pinorama
 ========
 
+Here is a working prototype: https://www.youtube.com/watch?v=PHeOIEHKG8M
+
 Create photos with scala and the raspberry pi
 
 To get started ssh into the pi and execute the following:
