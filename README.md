@@ -3,7 +3,7 @@ pinorama
 
 Here is a working prototype: https://www.youtube.com/watch?v=PHeOIEHKG8M
 
-Create photos with scala and the raspberry pi
+Take photos with python, bash and the raspberry pi
 
 To get started ssh into the pi and execute the following:
 > git clone https://github.com/fraxedas/pinorama.git  
